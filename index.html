@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper & Scissors</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assests/favicon.svg"
+      type="image/x-icon"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <section class="game">
+          <!-- info -->
+          <article class="info">
+            <h1>Rock Paper & Scissors</h1>
+            <button class="play btn">Let's Play!</button>
+            <h4>First to score 10 points wins!</h4>
+          </article>
+
+          <!-- board -->
+          <article class="board fadeOut">
+            <!-- score -->
+            <div class="score">
+              <div class="player-score">
+                <h3>Player</h3>
+                <h2>0</h2>
+              </div>
+
+              <div class="computer-score">
+                <h3>Computer</h3>
+                <h2>0</h2>
+              </div>
+            </div>
+
+            <!-- title -->
+            <h2 class="winner">Pick a move 🧐</h2>
+
+            <!-- hands -->
+            <div class="hands">
+              <img src="./assests/rock.png" alt="" class="player-hand" />
+              <img src="./assests/rock.png" alt="" class="computer-hand" />
+            </div>
+
+            <!-- options -->
+            <div class="options">
+              <button class="rock btn">rock</button>
+              <button class="paper btn">paper</button>
+              <button class="scissors btn">scissors</button>
+            </div>
+          </article>
+
+          <!-- modal -->
+          <div class="modal-overlay">
+            <div class="modal">
+              <h2 id="result">Showing Results Here</h2>
+              <button class="btn" id="quit">quit game </button>
+              <button class="btn" id="restart">restart</button>
+            </div>
+          </div>
+          <!-- end of modal -->
+        </section>
+      </header>
+
+      <!-- FOOTER -->
+      <footer>
+        Created by
+        <!-- link -->
+        <a href="http://yodkwtf.netlify.app" target="_blank" class="link">
+          Deekayy
+        </a>
+
+        <!-- twitter -->
+        <a href="https://twitter.com/yodkwtf" class="icon" id="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- insta -->
+        <a href="https://www.instagram.com/yodkwtf" class="icon" id="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- linkedin -->
+        <a
+          href="https://www.linkedin.com/in/durgesh-chaudhary/"
+          class="icon"
+          id="linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </footer>
+      <!-- END OF FOOTER -->
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
