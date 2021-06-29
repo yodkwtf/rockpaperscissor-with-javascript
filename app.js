@@ -115,11 +115,11 @@ const updateScore = () => {
 
 //----------> CHECKSCORE TO DECLARE WINNER
 const checkScore = () => {
-  if (playerScore >= 3) {
+  if (playerScore >= 5) {
     result.textContent = 'Congrats! You actually won.🎉';
     modalOverlay.classList.add('open-modal');
   }
-  if (computerScore >= 3) {
+  if (computerScore >= 5) {
     result.textContent = 'Wow man! You lost to a bot.🤡';
     modalOverlay.classList.add('open-modal');
   }
