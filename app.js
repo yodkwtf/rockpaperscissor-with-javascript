@@ -94,7 +94,7 @@ const compareChoice = (userChoice, computerChoice) => {
 
   // you obv got scissors
   else if (computerChoice === 'rock') {
-    text = 'Computer Won!😆';
+    text = 'Computer Won! 😆';
     computerScore++;
     color = 'danger';
   } else {
@@ -116,12 +116,12 @@ const updateScore = () => {
 //----------> CHECKSCORE TO DECLARE WINNER
 const checkScore = () => {
   if (playerScore >= 5) {
-    result.textContent = 'Congrats! You actually won.🎉';
-    modalOverlay.classList.add('open-modal');
+    result.textContent = 'Congrats! You really won.🎉';
+    setTimeout(() => modalOverlay.classList.add('open-modal'), 1500);
   }
   if (computerScore >= 5) {
-    result.textContent = 'Wow man! You lost to a bot.🤡';
-    modalOverlay.classList.add('open-modal');
+    result.textContent = 'Wow man! Lost to a bot.🤡';
+    setTimeout(() => modalOverlay.classList.add('open-modal'), 1500);
   }
 };
 
