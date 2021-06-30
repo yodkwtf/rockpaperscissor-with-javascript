@@ -8,7 +8,7 @@ A rock paper scissiors game created with pure vanilla javascript. The game is pr
 
 ## Tools
 
-- HTML & CSS
+- HTML, CSS, and Javascript
 - CSS Transitions and Animations
 - DOM Manipulation and Traversing the DOM
 - Modal Popups
